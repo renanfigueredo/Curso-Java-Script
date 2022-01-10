@@ -1,2 +1,2 @@
 # Curso-Java-Script
-Repositório Contendo todos os códigos realizados no curso de Java Script
+Repositório Contendo todos os códigos realizados no curso "Curso de JavaScript e TypeScript do básico ao avançado 2021" do professor Luiz Otávio Miranda oferecido pela Udemy.
