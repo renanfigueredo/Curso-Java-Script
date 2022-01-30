@@ -1,0 +1,82 @@
+<!--  ################################################ AULA 562 ################################################ -->
+<!--  #######                                       Listas e menu                                        ####### -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML <HTML></HTML></title>
+
+<!-- todo link vem com um text-decoration que o deixa sublinhado, se quiser tirar text-decoration: none;  -->
+<!-- justify-content: center; centraliza o texto no meio da tela,  align-items: center; centraliza no meio da div -->
+<!-- Elementos in-line não funcionam muito bem com padding margin. 
+     já os elementos que são display blok, empurram os objetos -->
+<!-- "nav a:hover" cria uma pelicula sobre o icone que vc está passando o mouse. -->
+<!-- rgba vc escolhe a cor e quão trasparente fica o fundo -->
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        nav{
+            background: black;
+            height: 50px;
+            display: flex;
+            padding: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+        nav a {
+            color: antiquewhite;    
+            text-decoration: none; 
+            display: block;
+            padding: 15px;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background: rgba(220, 241, 26, 0.719);
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Lista não ordenada são boas para fazer menus  -->
+    <nav>
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> About</a></li>
+            <li><a href="#"> Products</a></li>
+        </ul>
+    </nav>
+
+    <!--1 ul - lista não ordenada, <li> são os objetos da lista
+     Lista não ordenada são boas para fazer menus  -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <!--2 ol - lista ordenada, em uma lista ordenada, é possível definir o icone que aparece antes do item "type="I"" 
+          podemos definir qual o valor inicial da contagem "start="20""-->
+    <ol type="I" start="20">
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 1</li>
+    </ol>
+    <!--3 <dl> - lista descritiva, <dt> - termo descritivo, <dd> descrição  -->
+   <dl>
+    <dt>Café</dt>
+    <dd>- black hot drink (bebida escura quente)</dd>
+   </dl>
+</body>
+</html>
+
+<!-- para validar o txt HTML podemos usar o site: validator.w3.org  -->
+<!--  -->

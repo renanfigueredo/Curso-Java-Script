@@ -1,0 +1,103 @@
+<!--  ############################################  AULA 570-571    ############################################ -->
+<!--  #######                                  Seletores basicos do CSS                                  ####### -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<!-- digita link e seleciona a opção CSS: (OBS.: caso vc chame mais de um arquivo e eles tenham a mesma classe com atributos diferentes,
+    prevalece o que foi chamado por ultimo)-->
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- href é a UTL ou caminho do arquivo CSS -->
+</head>
+<body>
+
+    <div class="caixa">
+        <section>
+            <h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                </p><br>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                </p><br>
+            </h1>
+        </section>
+        <section >
+            <h2 class="teste1" id="teste1">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            </h2><br>
+       </section>
+    </div>
+<hr>
+
+    <div >
+        <section>
+            <p>
+                Paragrafo em outra seção porem sem classe atribuida mantem as prop já definidas
+            </p>
+            <p class="RedStyle">
+                paragrafo com classe atribuida segue as prop da class
+            </p><br>
+       </section>
+    </div>
+
+    <div class="pai">
+        div pai possui seus atributos
+        <div>
+            div filha vai herdar os atributos do pai a menos que vc altere as config pré determinadas
+        </div>
+    </div><br>
+
+    <div class="pai filha" >
+        Div que possui as classes pai e filha, reparar em como chama as classes !
+    </div><br>
+
+    <div class="pai">
+        PAI
+        <div class="filha">
+            FILHA 1
+            <div class="neta">
+                FILHA da filha 
+            </div>
+        </div>
+        <div class="filha">
+            FILHA 2
+            <div class="neta">
+                FILHA da filha 2
+            </div>
+        </div>
+    </div>
+
+    <div class="pai2">
+        <h2>Irmão 1</h2>
+        <P class="reset"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+        <P class="reset"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+        <P class="reset"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+        <h2>Irmão 2</h2>
+        <P class="reset"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+        <P class="reset"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+        <P class="reset"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+    </div><br><br>
+
+        <div >
+            <h2 meu-atributo>Irmão 1</h2>
+            <P  meu-atributo> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+        </div><br>
+        <div >
+            <h2 meu-atributo="valor"> Atributo com valor1</h2>
+            <P meu-atributo="valor"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+        </div><br>
+
+        <div >
+            <h2 meu-atributo="valor2">Atributo com valor2</h2>
+            <P meu-atributo="valor2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+        </div>
+</body>
+</html>
+
+<!-- para validar o txt HTML podemos usar o site: validator.w3.org  -->
+<!--  -->

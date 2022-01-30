@@ -1,0 +1,927 @@
+<!--Estrutura padrão do HTML:-->
+<!--  ################################################ AULA 553 ################################################ -->
+
+<!doctype HTML> <!-- informa que o cód está escrito em HTML -->
+<html lang="pt-BR">  <!-- todo o cód deve estar dentro dessa chaves, sempre informar o idima da pág -->
+
+<head>  <!-- Especificando o que tem dentro do cód -->
+    <title>Nome da Pag na aba do navegador</title>
+    <meta charset="UTF-8"/> <!-- Especificando o que tipo de texto a utilizar (evita que de erro de caracter) -->
+</head>
+
+<body>
+    Contém as informações que devem aparecer na tela. // pág sem Body tbm é considerada estrutura HTML válida
+</body>
+</html>
+<!-- para validar o txt HTML podemos usar o site: validator.w3.org  -->
+
+
+<!--  ################################################ AULA 554 ################################################ -->
+
+<!-- criar a estrutura HTML automaticamente, basta digitar "!" que o VScode gera: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- tág define a resolução da pág na tela de celular -->
+    <title>Nome da Pag na aba do navegador</title>
+</head>
+<body>
+    <h1> Cabeçalho / Título dentro da pág </h1>
+    <P>Paragrafro</P>
+    <!-- "Lorem" cria um texto automático no VScode: -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aperiam quam! 
+        Optio aspernatur voluptates corrupti enim dolores quisquam asperiores laudantium nostrum fuga. 
+        Commodi ab suscipit earum a, recusandae officia doloribus.</p>
+    <br>  <!-- representa uma quebra de linha (pula linha haha)  -->
+</body> <!-- Sempre lembrar que as tags vão sendo fechadas respeitando a hierarquia  -->
+</html>
+
+
+<!--  ################################################ AULA 555 ################################################ -->
+<!--  #######                                    Cabeçalho (headings)                                    ####### -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML 555</title>
+
+    <style>
+        h1 {
+            background: red;
+        }
+
+        p{
+            background: indigo;
+        }
+        
+        #cabecalho-dois{ 
+            background: greenyellow;
+        }
+
+        .fundo-amarelo{
+            background: rgb(252, 235, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="cabecalho-um" class="fundo-vermelho" > <!-- Identificador da tag, deve ser unico dentro da pág (sempre bom colocar entre "") -->
+       <p> podemos definir cor pelo nome do comando, essa ação tem maior especificidade do que o titulo.  </p>
+       Titulo1
+    </h1> 
+
+    <h1 id="cabecalho-dois" class="fundo-vermelho" > <!-- Identificador da tag, deve ser unico dentro da pág (sempre bom colocar entre "") -->
+        <p1>Tbm podemos definir o style pelo ID. Para chamar ela: #nomeid <br>
+        O ID é um dos elementos com maior especificidade no cód, para "sobresquever ele só usando outro ID" </p1>
+    </h1> 
+
+    <h1 id="cabecalho-tres" class="fundo-amarelo" > <!-- Identificador da tag, deve ser unico dentro da pág (sempre bom colocar entre "") -->
+       e possivel definir o fundo usando a classe. Para chamar ela: .nomeclass
+    </h1>
+</body>
+</html>
+
+<!-- para validar o txt HTML podemos usar o site: validator.w3.org  -->
+
+
+<!--  ################################################ AULA 556 ################################################ -->
+<!--  #######                                    Cabeçalho (headings)                                    ####### -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu <HTML></HTML></title>
+</head>
+
+<body>
+    <h1>Titulo 1.0</h1>
+    <p>Quanto maior o "nivel" dos "Hs" menor é o título.  </p>
+    <h2>Titulo 2.0</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Illum distinctio ab iure error pariatur. Vero aperiam corporis soluta quos fuga dicta? </p>
+    <h2>Titulo 2.1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quam necessitatibus quae dolorum quo debitis incidunt voluptas, repudiandae, atque magni, optio eligendi autem? </p>
+    <h3>Titulo 3.0</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Veritatis maiores reiciendis similique quidem sint placeat at quam quod necessitatibus architecto </p>
+    <h3>Titulo 3.1</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Facilis animi nisi laudantium quidem omnis. </p>
+    <h3>Titulo 3.2</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Hic ipsum, quo illo quam, porro asperiores in a, blanditiis similique 
+        explicabo nostrum inventore tempore dolore perferendis atque perspiciatis voluptatibus vel assumenda.</p>
+    <h4>Titulo 4.0</h4>
+    <h5>Titulo 5.0</h5>
+    <h6>Titulo 6.0</h6>
+    <h1>Titulo 1.1</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Ab, quis minus porro nemo possimus ut harum qui sunt tempora iure doloremque, 
+        veniam pariatur repudiandae quos nesciunt illum optio soluta quidem.</p>
+</body>
+</html>
+
+<!-- para validar o txt HTML podemos usar o site: validator.w3.org  -->
+
+
+<!--  ################################################ AULA 557 ################################################ -->
+<!--  #######                                    Comandos básicos (TAGS)                                 ####### -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML <HTML></HTML></title>
+
+    <Style>
+    .LogoDino{ 
+        width: 150px
+    }
+    .vermelho{
+        color: red;
+        font-size: 15px;
+    }
+    .verde{
+        color: greenyellow;
+    }
+    .fonte25{
+        font-size: 25px;
+    }
+    </Style>
+</head>
+
+<body>
+    <h1>Cabecalho</h1>
+
+    Tags que podem ser inseridas dentro de blocos: 
+
+    <P><b>Negrito </b> ...... <strong> Além de deixar negrito, quando utilizar recursos de leitura, a palavra fica "mais forte" </strong>
+    <p><i>Italico</i> ...... <em>Além de deixar italico, quando utilizar recursos de leitura, a palavra fica com enfase</em></p>
+    <a href="https://www.linkedin.com/in/renanolive/" target="_blank"><p><i> Linkedin </i></p></a>
+    <!-- O target possui várias opções de como a pág vai ser aberta, só passando o mouse sobre ele que aparece -->
+
+    <a href="https://developers.google.com/search/docs/advanced/guidelines/qualify-outbound-links?hl=pt-br" target="_blank">
+        <p><i> Site do google que apresenta alguns docs sobre criação/configuração do link </i></p></a>
+    <img class="LogoDino" src="https://img.olhardigital.com.br/wp-content/uploads/2021/04/Jurassic-Park-825x450.jpg" alt="Texto descrevendo a imagem">
+
+    <!-- Colocar uma imagem com link:  -->
+    <a href="https://youtu.be/cR7erYmO0m8?t=216" target="_blank"><br>
+        <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/4252a0ecf2852d115f53da22c3ac771996bad2cc29d4f0340ff592a5b8c9116e._RI_V_TTW_.jpg" alt="Logo do filme Jurassic Park em uma porta de madeira"
+        width="150" ><br></a> <!----> podemos mudar a dimenção da imagem pelo style ou no proprio corpo da tag da imagem -->
+        <!-- sempre bom colocar um "br" após a imagem para "pular a linha"-->
+
+    <p><S>Risca a palavra </s> ......
+    <del>Risca a palavra e informa o leitor</del><br>
+    <u>Sublinha a palavra </u> ......
+    <ins>Sublinha a palavra e avisa o leitor</ins><br>
+    Representação do num elevado: 2<sup>2</sup><br>
+    Representação do num em baixo: H<sub>2</sub>0<br>
+    <q>palavra entre aspas, tbm usado para citações:</q>
+    <q cite= "quem/local"> texto da citação </q></p><br>
+    <p>a tág span <Span class="vermelho"> Altera o texto</Span> que não <span class="verde">precise de carater</span> semantico </p><br>
+
+    <hr><!-- cria uma linha continua  -->
+
+    <!-- Criando um bloco de citação (não pode ser colocado dentro do paragrafo "<p>" porém podemos colocar paragrafo dentro da citação")-->
+    <blockquote cite="VSCode citação"> <p>Esse bloco muda a posição da citação na tela e não colocar aspas </p> </blockquote>
+    
+    <pre><!-- plota o cód igual ele está estruturado no VSCode-->
+        <cod> <!-- altera o estilo do texto sinalizando que é um cód-->
+        Altera o estilo de texto sinalizando que ele é um cód de programação:
+            
+        inputsMais.forEach ((input) =>{    
+            const A = input.value;
+            const numero - Number(valor);    
+
+            if (numero){
+                soma += numero;
+            }
+
+            console.log(soma);
+        })
+        </cod></pre>
+    
+    <div class="fonte25">cria uma janela onde podemos colocar o texto, não pode ser utilizada "in line"</div>
+</body>
+</html>
+
+<!-- para validar o txt HTML podemos usar o site: validator.w3.org  -->
+
+
+<!--  ################################################ AULA 558 ################################################ -->
+
+<!-- Site com todas as tags e explicações: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element -->
+
+<!--  ################################################ AULA 559 ################################################ -->
+<!--  #######                                      Semantica no HTML                                     ####### -->
+
+<!-- Ver notas no caderno -->
+
+<!--  ################################################ AULA 560 ################################################ -->
+<!--  #######                                      Conteudo sobre DIVs                                   ####### -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML <HTML></HTML></title>
+
+<!-- no CSS, quando queremos selecionar todo o arqivo para realziar alguma config usa o "*"  -->
+<!-- quanto maior o caminho, maior a especificidade (#heading h1 a {) -->
+<!-- text-decoration vc escolhe como aparece o sublinhado do link -->
+    <style> 
+        *{ 
+            margin: 0;
+            padding: 0;
+        }
+        #heading {
+            display: flex;
+            background-color: #e50914;
+            justify-content: space-between;
+        }
+        #heading .h1{
+            padding: 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        #heading h1 a {
+            color: white;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+<!--    
+    <div style="width: 180px; height: 180px; background: red ">
+    <div style="width: 120px; height: 120px; background: yellow "> podemos colocar uma div dentro de outra </div> </div>
+
+    <div style="width: 60px; height: 120px; background: rgb(9, 255, 0) ; float: right ;"> o float define aonde a caixa vai ser colocada </div> --> 
+
+    <!-- Criando "divs atoa"  
+        <div style="height: 80px; width: 100px; background-color: red;float: left ; "> <span style="font-size: 25px;"> <br>NetCode</span></div>
+        <div style="height: 80px; width: 100px; background-color: turquoise; float: right;"> <span style="font-size: 25px;"> <br>Entrar</span></div></div>
+    --><!-- No meu caso tive que colocar as duas caixas e informar a posição para ficarem "alinhadas"  -->
+    
+    <header id="heading">
+        <h1 class="h1">
+            <a href="#">NetCode</a> 
+        </h1>
+
+        <h2 class="h1">
+            <a href="#">NetCode</a> 
+        </h2>
+    </header>
+</body>
+</html>
+
+
+<!--  ################################################ AULA 561 ################################################ -->
+<!--  #######                                 Como criar boxmodels com CSS                               ####### -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML <HTML></HTML></title>
+
+<!-- quando não expecificamos o comprimento do bloco, o mesmo se enquadra no tamanho da tela. 
+     caso o tamanho seja definido, e a propriedade (box-sizing: border-box) esteja marcada todos os 
+     elementos (pedding, border) se enquadram para não passar o tamanho da caixa  -->
+<!-- a margin, "empurra" todo o objeto para os lados, deixando o valor definido. 
+     quando temos duas margins "se tocando" prevalece o valor da margim maior, ou seja elas não se somam  -->
+<!-- é possivel definir borda somente para um lado porém precisa usar os 3 comando: (border-bottom-width: tamanho; 
+     border-bottom-style: tipo; border-bottom-color: cor) as borda que não mudarmos fica na cor pre-definida -->
+<!-- Sites muito bons para verificar/estudar a documentação de HTML e CSS são o https://developer.mozilla.org/pt-BR/  e 
+     https://www.w3schools.com esse é possivel "testar o cód" que vc está pesquisando -->    
+    <Style>
+        .section-one , .section-colors {
+            box-sizing: border-box;
+        }
+        .section-one{
+            width: 250px;
+            height: 250px;
+            color: rgba(19, 22, 216, 0.76);
+            background: deeppink;
+            border: 15px dashed #32ce32;
+            padding: 15px;
+            background-image: url(https://media.springernature.com/full/springer-cms/rest/v1/img/18893370/v1/height/320);
+            background-size:cover ;
+            background-position: center center;
+            margin: 20px;
+        }
+        .section-two{
+            background: rgb(20, 255, 255);
+            padding: 15px;
+            margin: 50px;
+            border-bottom-width: 10px;
+            border-bottom-color: yellow;
+            border-bottom-style: solid;
+        }
+        .section-colors{
+            width: 220px;
+            height:100px;
+            border: red solid 10px;
+            padding: 7px;
+            border-bottom-color: rgb(21, 255, 0);
+            border-top-color: rgb(255, 251, 0);
+            border-left-color: rgb(17, 0, 255);
+        }
+    </Style>
+</head>
+
+<body>
+
+    <section class="section-one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Aperiam adipisci assumenda, cumque aspernatur voluptatibus distinctio quo accusantium quam aut quisquam 
+        enim ea magni, qui eaque tempora cum suscipit quia vitae?</section>
+
+    <section class="section-two">22</section>
+    <section class="section-colors">Podemos mudar as cores das bordas tbm, e a borda que não mudarmos fica na cor pre-definida </section>
+</body>
+</html>
+
+<!-- para validar o txt HTML podemos usar o site: validator.w3.org  -->
+
+
+<!--  ################################################ AULA 562 ################################################ -->
+<!--  #######                                       Listas e menu                                        ####### -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML <HTML></HTML></title>
+
+<!-- todo link vem com um text-decoration que o deixa sublinhado, se quiser tirar text-decoration: none;  -->
+<!-- justify-content: center; centraliza o texto no meio da tela,  align-items: center; centraliza no meio da div -->
+<!-- Elementos in-line não funcionam muito bem com padding margin. 
+     já os elementos que são display blok, empurram os objetos -->
+<!-- "nav a:hover" cria uma pelicula sobre o icone que vc está passando o mouse. -->
+<!-- rgba vc escolhe a cor e quão trasparente fica o fundo -->
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        nav{
+            background: black;
+            height: 50px;
+            display: flex;
+            padding: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+        nav a {
+            color: antiquewhite;    
+            text-decoration: none; 
+            display: block;
+            padding: 15px;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background: rgba(220, 241, 26, 0.719);
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Lista não ordenada são boas para fazer menus  -->
+    <nav>
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> About</a></li>
+            <li><a href="#"> Products</a></li>
+        </ul>
+    </nav>
+
+    <!--1 ul - lista não ordenada, <li> são os objetos da lista
+     Lista não ordenada são boas para fazer menus  -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <!--2 ol - lista ordenada, em uma lista ordenada, é possível definir o icone que aparece antes do item "type="I"" 
+          podemos definir qual o valor inicial da contagem "start="20""-->
+    <ol type="I" start="20">
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 1</li>
+    </ol>
+    <!--3 <dl> - lista descritiva, <dt> - termo descritivo, <dd> descrição  -->
+   <dl>
+    <dt>Café</dt>
+    <dd>- black hot drink (bebida escura quente)</dd>
+   </dl>
+</body>
+</html>
+
+<!-- para validar o txt HTML podemos usar o site: validator.w3.org  -->
+<!--  -->
+
+
+<!--  ################################################ AULA 563 ################################################ -->
+<!--  #######                                       Tabelas no HTML                                      ####### -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML <HTML></HTML></title>
+
+<!--border-collapse: collapse; une as colunas da tabela  -->
+<!--como padrão da tabela a linha principal é centralizada e as linhas do corpo alinhadas a esquerda -->
+<!--quando uma tabela é muito grande para a tela do celular é nescessário ajustala para não "bugar o site" 
+    para isso usamos  overflow-x: auto; quando a tabela é maior no eixo X ou overflow-y: é maior no eixo Y
+    para melhor configurar, sempre bom colocar em uma div -->
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 85%;
+        }
+        table tbody{
+            font-family: 'Lucida Sans';
+        }
+        table td, table th {
+            border: 1px solid grey;
+            padding: 5px;
+        }
+        table caption{
+            caption-side: bottom;
+            text-align: right;
+            font-size: 10px;
+            font-style: italic;
+        }
+        table th{
+            background: burlywood;
+            font-style: oblique ;
+        }
+        tfoot{
+            font-style: italic;
+            font-size: 13px;
+            background: rgba(222, 184, 135, 0.925);
+        }
+        .Organizando-tabela{
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+<!--para adicionar tabelas utilizamos a tag <table>  ela recebe cabeçalho: <thead>  corpo: <tbody>  e rodapé: <tfoot>  
+    para representar/chamar uma linha <tr> e <th> para coluna "principal" e <td> para as demais colunas   
+    a coluna deve ter as mesmas dimenções em todas as linhas/ colunas    -->
+    
+    <div class="Organizando-tabela">
+    <table>
+        <caption> É a descrição da tabela</caption>
+        <thead>
+            <tr>
+                <th> Título coluna 1 </th> 
+                <th> Título coluna 2</th>
+                <th> Título coluna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Corpo 1</td>
+                <td> Corpo 2</td>
+                <td> Corpo 3</td>
+             </tr>
+
+            <!--para adicionar outra linha basta criar outro <TR> com os <TD>  -->
+            <!--colspan="quantidade" => defini que uma coluna ocupe mais de um intervalo  
+                rowspan="quantidade" => defini que uma linha ocupe mais de um intervalo -->
+            <tr>
+                <td colspan="2" rowspan="2"> Corpo 4</td>
+                <td> Corpo 5</td>
+            </tr>
+            <tr>
+                <td> Corpo 6</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <td> rodapé 1</td>
+            <td> rodapé 2</td>
+            <td> rodapé 3</td>  
+        </tfoot>
+    </table>
+</div>
+</body>
+</html>
+
+<!-- para validar o txt HTML podemos usar o site: validator.w3.org  -->
+<!--  -->
+
+
+<!--  ############################################## AULA 564-567 ############################################## -->
+<!--  #######                                     Formularios e Inputs                                   ####### -->
+
+<!-- Documentação sobre formulários: 
+    https://www.w3schools.com/html/html_form_input_types.asp  
+    https://developer.mozilla.org/pt-BR/docs/Learn/Forms/How_to_structure_a_web_form -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML <HTML>
+
+        </HTML>
+    </title>
+
+</head>
+
+<body>
+    <!-- E PROIBIDO COLOCAR UM FORMS DENTRO DE OUTRO FORMS-->
+    <!-- opção "required" Para deixar um campo obrigatório. checked sinaliza qual opção inicia pessionada  -->
+
+    <form action="#Para_onde_o_forms_vai_ser_encaminhado" method="get" target="_black">
+        <!-- method="get (padrão)" vai poegar as infos e deixar com padrã ode URL>
+         target="_black" o que fazer quando enviar o forms (recaregar a propria pag ou enviar para outra)-->
+        <p> Cabeçalho do formulário</p>
+        <fieldset> <!-- O que ficar dentro dele fica dentro de uma "caixa de destaque" na pág-->
+
+            <legend>Descrição do forms (não é obrigatório) </legend>
+            
+            <p>
+            <label for="nome">Nome</label>
+            <!--  ^^ é um campo "clicavel". <label for="local"> direciona para "local" quando clicado, esse "local" deve ser o ID do objeto
+                É semanticamente mais correto assim  -->
+            <input type="text" id="nome" name="nomeAcociadoAoBackEnd" placeholder="Seu nome" required></p>
+                <!--      ^^ cria a caixa de inserção, placeholder="Texto" => é a msg que aparece dentro da caixa do imput -->
+            
+            <p>
+            <label for="dev">Sou um DEV</label>
+            <input type="checkbox" id="dev" name="dev" value="sim"><br></p>
+            <!--            ^^ aparece a caixa de seleção -->
+
+            <p>
+            Genero:<br>
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="Genero" value="feminino"><br>
+            <!--          ^^ gera uma caixa de seleção e só podem selecionar uma das opções -->
+            <label for="feminino">Masculino</label>
+            <input type="radio" id="Masculino" name="Genero" value="masculino"><br>
+            <label for="feminino">Outro_Outra</label>
+            <input type="radio" id="Outro_Outra" name="Genero" value="Outro_Outra" checked><br></p>
+
+            <p>
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data" value="2022-01-24"><br></p>
+            <!--          ^^ aparece um calendário para vc selecioanar a data, value = "data inicial" -->
+
+            <p>
+            <label for="datatime">Data e Hora</label>
+            <input type="datetime-local" id="datatime" name="datatime" value="2022-02-24T16:10:48"><br></p>
+            <!--         ^^ aparece um calendário para vc selecioanar a data e hora, "value" é preciso colocar o "T" para indicar a hora -->
+
+            <p>
+            <label for="time">Hora</label>
+            <input type="time" id="time" name="time" value="16:10:50"><br></p>
+            <!--         ^^ aparece um relógio para colocar a hora, "value" é preciso especificar se quer os segundo tbm -->
+
+            <p>
+            <label for="cor">Cor preferida</label>
+            <input type="color" id="cor" name="cor"><br></p>
+            <!--         ^^ aparece a paleta de cor -->
+
+            <p>
+            <label for="email">Informe seu e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Ex.: email@email.com"><br></p>
+            <!--         ^^ cria uma caixa de texto, esse texto já vem com uma validação simples de e-mail -->
+
+            <p>
+            <label for="file">Informe seu e-mail:</label>
+            <input type="file" id="file" name="file" accept=".png, image/*" multiple><br></p>
+            <!--         ^^ possibilita vc selecionar arquivos para a pag, accept vc define qual estenção de arquivo vai poder subir
+            "image/*" informa que toda extenção de imagem é válida, verificar documentação para os demais tipos
+             multiple permite selecionar mais de um arquivo-->
+
+            <p>
+            <label for="Number">Informe sua matrícula:</label>
+            <input type="Number" id="Number" name="Number" placeholder="Ex.: 147" min="0" max="1000" step="10"><br></p>
+                <!--      ^^  abre uma caixa para digitar num, é possível definir o valor min e max do intervalo e o valor do passo  -->
+
+            <p>
+            <label for="password">Informe sua senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" ><br></p>
+            <!--           ^^  caixa de texto, porém não aparece o valor digitado   -->
+
+            <p>
+            <label for="URL"> informe seu Github:</label>
+            <input type="URL" id="URL" name="URL" ><br></p>
+            <!--          ^^  cria um "scrow"   -->
+
+            <p>
+            <label for="URL"> informe seu Github:</label>
+            <input type="URL" id="URL" name="URL" ><br></p>
+            <!--          ^^  campo para apresentar a URL com verificações básicas"   -->
+
+            <p><!--    Opção select é diferente das outras   -->
+            <label for="select"> Selecione alguma opção:</label>
+
+            <select id="select" name="select">
+            <optgroup label="Grupo 1 "> <!--Agrupa os termos -->
+                <option value="valorqueepassado1"> Texto "infornando" o valor 1 </option>
+                <option value="valorqueepassado2"> Texto "infornando" o valor 2 </option>
+                <option value="valorqueepassado3" label="Texto 'infornando' o Valor 3"></option>
+                <option value="valorqueepassado4" label="Texto 'infornando' o Valor 4"></option>
+                <!--pode ser expressa dessas duas formas -->
+            </optgroup>
+            <optgroup label="Grupo 2 ">
+            <option value="valorqueepassado5"> Texto "infornando" o valor 5 </option>
+            <option value="valorqueepassado6"> Texto "infornando" o valor 6 </option>
+            <option value="valorqueepassado7" label="Texto 'infornando' o Valor 7"></option>
+            <option value="valorqueepassado8" label="Texto 'infornando' o Valor 8"></option>
+            </optgroup>
+            </select>
+
+            <p>
+                <label for="textarea"> Caixa com mais de uma linha:</label>
+                <textarea id="textarea" name="textarea" rows="3" cols="5" >
+                <!--          ^^  Caixa com mais de uma linha, rows="numero de linhas da caixa" rows="numero de caracteres por linha"   -->
+                </textarea>
+
+
+            <p>
+                <button type="submit"> Enviar </button>
+                <button type="reset"> Reset </button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
+
+<!-- para validar o txt HTML podemos usar o site: validator.w3.org  -->
+<!--  -->
+
+<!--  ##############################################  AULA 568    ############################################## -->
+<!--  #######                           Separando os arquivos CCS e HTML                                 ####### -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- é comum no CSS é definir as propriedades do CSS utilizando as classes dos elementos -->
+<!-- !!! para separarmos os arquivos em 2 códs (HTML em um e CSS) criamos uma pasta "assets" e dentro dela criamos uma pasta "css" 
+    e dentro dessa pasta criar o arquivo "styles.css" -->
+    
+<!-- digita link e seleciona a opção CSS: (OBS.: caso vc chame mais de um arquivo e eles tenham a mesma classe com atributos diferentes,
+    prevalece o que foi chamado por ultimo)-->
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- href é a UTL ou caminho do arquivo CSS -->
+
+
+</head>
+<body>
+    <div class="caixa">
+    <p>
+        
+    </p>
+
+    </div>
+    
+</body>
+</html>
+
+
+<!-- 888888888888888888888888888888888888888888888 parte do CSS 888888888888888888888888888888888888888888888 -->
+
+/* !!! COMENTARIO EM CSS MUDA A ESTRUTURA !!! */
+/* !!! para separarmos os arquivos em 2 códs (HTML em um e CSS) criamos uma pasta "assets" e dentro dela criamos uma pasta "css" 
+    e dentro dessa pasta criar o arquivo "styles.css". 
+    No arquivo CSS não é preciso colocar a tag <style> porém precisamos lincar o arquivo CSS ao arquivo HTML.*/
+.caixa{
+    background-color: aqua;
+    height: 120px;
+    width: auto;
+}
+
+<!--  ############################################  AULA 570-571    ############################################ -->
+<!--  #######                                  Seletores basicos do CSS                                  ####### -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<!-- digita link e seleciona a opção CSS: (OBS.: caso vc chame mais de um arquivo e eles tenham a mesma classe com atributos diferentes,
+    prevalece o que foi chamado por ultimo)-->
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- href é a UTL ou caminho do arquivo CSS -->
+</head>
+<body>
+
+    <div class="caixa">
+        <section>
+            <h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                </p><br>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                </p><br>
+            </h1>
+        </section>
+        <section >
+            <h2 class="teste1" id="teste1">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            </h2><br>
+       </section>
+    </div>
+<hr>
+
+    <div >
+        <section>
+            <p>
+                Paragrafo em outra seção porem sem classe atribuida mantem as prop já definidas
+            </p>
+            <p class="RedStyle">
+                paragrafo com classe atribuida segue as prop da class
+            </p><br>
+       </section>
+    </div>
+
+    <div class="pai">
+        div pai possui seus atributos
+        <div>
+            div filha vai herdar os atributos do pai a menos que vc altere as config pré determinadas
+        </div>
+    </div><br>
+
+    <div class="pai filha" >
+        Div que possui as classes pai e filha, reparar em como chama as classes !
+    </div><br>
+
+    <div class="pai">
+        PAI
+        <div class="filha">
+            FILHA 1
+            <div class="neta">
+                FILHA da filha 
+            </div>
+        </div>
+        <div class="filha">
+            FILHA 2
+            <div class="neta">
+                FILHA da filha 2
+            </div>
+        </div>
+    </div>
+
+    <div class="pai2">
+        <h2>Irmão 1</h2>
+        <P class="reset"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+        <P class="reset"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+        <P class="reset"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+        <h2>Irmão 2</h2>
+        <P class="reset"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+        <P class="reset"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+        <P class="reset"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+    </div><br><br>
+
+        <div >
+            <h2 meu-atributo>Irmão 1</h2>
+            <P  meu-atributo> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+        </div><br>
+        <div >
+            <h2 meu-atributo="valor"> Atributo com valor1</h2>
+            <P meu-atributo="valor"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+        </div><br>
+
+        <div >
+            <h2 meu-atributo="valor2">Atributo com valor2</h2>
+            <P meu-atributo="valor2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+        </div>
+</body>
+</html>
+
+<!-- para validar o txt HTML podemos usar o site: validator.w3.org  -->
+<!--  -->
+
+/*#######                                  Seletores basicos do CSS                                  #######*/
+
+
+*{ /* seleciona todos os obejetos do cód, geralmente utilizamos ele para "zerar" os valores padrões   */
+    margin: 0px;
+    border: 0px;
+    color: initial;
+}
+/* color: inherit  opção padrão, informa que o objeto vai herdar as configs do pai
+   color: initial  ignora a herança  */
+
+p{  /* selecionar por tag define o padão para todas as tags */
+    color: hotpink;
+    background-color: rgb(50, 10, 116);
+}
+
+body div h1{ /* quanto mais especifico o endereço, mais "forte" e a propriedade */
+    background-color: blue;
+}
+
+h1, .teste1{ /* podemos selecionar mais de um endereço para definir as prop */
+    text-transform: lowercase;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.RedStyle{
+    font-size: 20px;
+    color: red;
+    background-color: wheat;
+}
+
+.pai{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: rgb(0, 255, 13);
+}
+.pai.filha{ /* nesse caso o elemento deve possuir as duas classes */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: tomato;
+    background-color: #344234;
+    margin-left: 35px;
+}
+
+/*  informa que só as "filhas" diretas da classe "pai" recebem a propriedade (chindren select ) 
+caso tenha algum objeto no caminho "falha o comando" */
+.pai>.filha{ 
+    color: blueviolet;
+    margin-left: 35px;
+}
+.pai>.filha>.neta{
+    margin-left: 60px;
+    color: rgb(209, 146, 109);
+}
+
+div .reset{ /* como não comecei outro arquivo, criei essa classe para zerar os atributos de cima*/
+    margin: 0px;
+    border: 0px;
+    color: initial;
+    background-color: initial;
+    font-family: initial;
+}
+
+.pai2 h2+p{ /* elemento da classe "pai" que tem os "irmãos" descritos na sequencia recebe a config (adjacents sibling  ) */
+    color: red;
+}
+.pai2 h2~p{ /* todos os "P" que vier depois do H2 na sequencia recebe a config */
+    background-color: turquoise;
+}
+
+[meu-atributo]{ /* para chamar um atributo usa [] */
+    color: rgb(210, 30, 39);
+    background-color: cornflowerblue;
+}
+[meu-atributo="valor"]{
+    font-size: 42px;
+    background-color: initial;
+    color: lightcoral;
+
+}
+[meu-atributo="valor2"]{
+    font-size: 25px;
+    background-color: initial;
+    color: rgb(42, 58, 151);
+
+}

@@ -1,0 +1,97 @@
+<!--  ################################################ AULA 563 ################################################ -->
+<!--  #######                                       Tabelas no HTML                                      ####### -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML <HTML></HTML></title>
+
+<!--border-collapse: collapse; une as colunas da tabela  -->
+<!--como padrão da tabela a linha principal é centralizada e as linhas do corpo alinhadas a esquerda -->
+<!--quando uma tabela é muito grande para a tela do celular é nescessário ajustala para não "bugar o site" 
+    para isso usamos  overflow-x: auto; quando a tabela é maior no eixo X ou overflow-y: é maior no eixo Y
+    para melhor configurar, sempre bom colocar em uma div -->
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 85%;
+        }
+        table tbody{
+            font-family: 'Lucida Sans';
+        }
+        table td, table th {
+            border: 1px solid grey;
+            padding: 5px;
+        }
+        table caption{
+            caption-side: bottom;
+            text-align: right;
+            font-size: 10px;
+            font-style: italic;
+        }
+        table th{
+            background: burlywood;
+            font-style: oblique ;
+        }
+        tfoot{
+            font-style: italic;
+            font-size: 13px;
+            background: rgba(222, 184, 135, 0.925);
+        }
+        .Organizando-tabela{
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+<!--para adicionar tabelas utilizamos a tag <table>  ela recebe cabeçalho: <thead>  corpo: <tbody>  e rodapé: <tfoot>  
+    para representar/chamar uma linha <tr> e <th> para coluna "principal" e <td> para as demais colunas   
+    a coluna deve ter as mesmas dimenções em todas as linhas/ colunas    -->
+    
+    <div class="Organizando-tabela">
+    <table>
+        <caption> É a descrição da tabela</caption>
+        <thead>
+            <tr>
+                <th> Título coluna 1 </th> 
+                <th> Título coluna 2</th>
+                <th> Título coluna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Corpo 1</td>
+                <td> Corpo 2</td>
+                <td> Corpo 3</td>
+             </tr>
+
+            <!--para adicionar outra linha basta criar outro <TR> com os <TD>  -->
+            <!--colspan="quantidade" => defini que uma coluna ocupe mais de um intervalo  
+                rowspan="quantidade" => defini que uma linha ocupe mais de um intervalo -->
+            <tr>
+                <td colspan="2" rowspan="2"> Corpo 4</td>
+                <td> Corpo 5</td>
+            </tr>
+            <tr>
+                <td> Corpo 6</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <td> rodapé 1</td>
+            <td> rodapé 2</td>
+            <td> rodapé 3</td>  
+        </tfoot>
+    </table>
+</div>
+</body>
+</html>
+
+<!-- para validar o txt HTML podemos usar o site: validator.w3.org  -->

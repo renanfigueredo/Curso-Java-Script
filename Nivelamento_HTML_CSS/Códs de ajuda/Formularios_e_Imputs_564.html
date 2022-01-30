@@ -1,0 +1,135 @@
+<!--  ############################################## AULA 564-567 ############################################## -->
+<!--  #######                                     Formularios e Inputs                                   ####### -->
+
+<!-- Documentação sobre formulários: 
+    https://www.w3schools.com/html/html_form_input_types.asp  
+    https://developer.mozilla.org/pt-BR/docs/Learn/Forms/How_to_structure_a_web_form -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML</title>
+</head>
+    
+<body>
+    <!-- E PROIBIDO COLOCAR UM FORMS DENTRO DE OUTRO FORMS-->
+    <!-- opção "required" Para deixar um campo obrigatório. checked sinaliza qual opção inicia pessionada  -->
+    
+    <form action="#Para_onde_o_forms_vai_ser_encaminhado" method="get" target="_black">
+        <!-- method="get (padrão)" vai poegar as infos e deixar com padrã ode URL>
+             target="_black" o que fazer quando enviar o forms (recaregar a propria pag ou enviar para outra)-->
+        <p> Cabeçalho do formulário</p>
+
+        <fieldset> <!-- O que ficar dentro dele fica dentro de uma "caixa de destaque" na pág-->
+            <legend>Descrição do forms (não é obrigatório) </legend>
+            
+            <p>
+            <label for="nome">Nome</label>
+                <!--     ^^ é um campo "clicavel". <label for="local"> direciona para "local" quando clicado, 
+                    esse "local" deve ser o ID do objeto -->
+                <input type="text" id="nome" name="nomeAcociadoAoBackEnd" placeholder="Seu nome" required></p>
+                    <!--      ^^ cria a caixa de inserção, placeholder="Texto" => é a msg que aparece dentro da caixa do imput -->
+                
+                <p>
+                <label for="dev">Sou um DEV</label>
+                <input type="checkbox" id="dev" name="dev" value="sim"><br></p>
+                <!--            ^^ aparece a caixa de seleção -->
+    
+            <p>
+            Genero:<br>
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="Genero" value="feminino"><br>
+            <!--          ^^ gera uma caixa de seleção e só podem selecionar uma das opções -->
+            <label for="feminino">Masculino</label>
+            <input type="radio" id="Masculino" name="Genero" value="masculino"><br>
+            <label for="feminino">Outro_Outra</label>
+            <input type="radio" id="Outro_Outra" name="Genero" value="Outro_Outra" checked><br></p>
+    
+            <p>
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data" value="2022-01-24"><br></p>
+            <!--          ^^ aparece um calendário para vc selecioanar a data, value = "data inicial" -->
+    
+            <p>
+            <label for="datatime">Data e Hora</label>
+            <input type="datetime-local" id="datatime" name="datatime" value="2022-02-24T16:10:48"><br></p>
+            <!--          ^^ aparece um calendário para vc selecioanar a data e hora,"value" é preciso colocar o "T" para indicar a hora -->
+    
+            <p>
+            <label for="time">Hora</label>
+            <input type="time" id="time" name="time" value="16:10:50"><br></p>
+            <!--         ^^ aparece um relógio para colocar a hora, "value" é preciso especificar se quer os segundo tbm -->
+    
+            <p>
+            <label for="cor">Cor preferida</label>
+            <input type="color" id="cor" name="cor"><br></p>
+            <!--         ^^ aparece a paleta de cor -->
+    
+            <p>
+            <label for="email">Informe seu e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Ex.: email@email.com"><br></p>
+            <!--         ^^ cria uma caixa de texto, esse texto já vem com uma validação simples de e-mail -->
+    
+            <p>
+            <label for="file">Informe seu e-mail:</label>
+            <input type="file" id="file" name="file" accept=".png, image/*" multiple><br></p>
+            <!--         ^^ possibilita vc selecionar arquivos para a pag, accept vc define qual estenção de arquivo vai poder subir
+            "image/*" informa que toda extenção de imagem é válida, verificar documentação para os demais tipos
+             multiple permite selecionar mais de um arquivo-->
+    
+            <p>
+            <label for="Number">Informe sua matrícula:</label>
+            <input type="Number" id="Number" name="Number" placeholder="Ex.: 147" min="0" max="1000" step="10"><br></p>
+             <!--        ^^  abre uma caixa para digitar num, é possível definir o valor min e max do intervalo e o valor do passo  -->
+    
+            <p>
+            <label for="password">Informe sua senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" ><br></p>
+            <!--         ^^  caixa de texto, porém não aparece o valor digitado   -->
+    
+            <p>
+            <label for="URL"> informe seu Github:</label>
+            <input type="URL" id="URL" name="URL" ><br></p>
+            <!--         ^^  campo para apresentar a URL com verificações básicas"   -->
+    
+            <p><!--    Opção select é diferente das outras   -->
+            <label for="select"> Selecione alguma opção:</label>
+    
+            <select id="select" name="select">
+            <optgroup label="Grupo 1 "> <!--Agrupa os termos -->
+                <option value="valorqueepassado1"> Texto "infornando" o valor 1 </option>
+                <option value="valorqueepassado2"> Texto "infornando" o valor 2 </option>
+                <option value="valorqueepassado3" label="Texto 'infornando' o Valor 3"></option>
+                <option value="valorqueepassado4" label="Texto 'infornando' o Valor 4"></option>
+                <!--pode ser expressa dessas duas formas -->
+            </optgroup>
+                <optgroup label="Grupo 2 ">
+                <option value="valorqueepassado5"> Texto "infornando" o valor 5 </option>
+                <option value="valorqueepassado6"> Texto "infornando" o valor 6 </option>
+                <option value="valorqueepassado7" label="Texto 'infornando' o Valor 7"></option>
+                <option value="valorqueepassado8" label="Texto 'infornando' o Valor 8"></option>
+                </optgroup>
+                </select>
+    
+            <p>
+                <label for="textarea"> Caixa com mais de uma linha:</label>
+                <textarea id="textarea" name="textarea" rows="3" cols="5" >
+                <!--          ^^  Caixa com mais de uma linha, rows="numero de linhas da caixa" rows="numero de caracteres por linha"   -->
+                </textarea>
+    
+    
+            <p>
+                <button type="submit"> Enviar </button>
+                <button type="reset"> Reset </button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
+
+<!-- para validar o txt HTML podemos usar o site: validator.w3.org  -->
+<!--  -->

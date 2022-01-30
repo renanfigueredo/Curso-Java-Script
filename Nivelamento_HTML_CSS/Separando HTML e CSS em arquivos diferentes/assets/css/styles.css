@@ -1,0 +1,86 @@
+/*#######                                  Seletores basicos do CSS                                  #######*/
+
+
+*{ /* seleciona todos os obejetos do cód, geralmente utilizamos ele para "zerar" os valores padrões   */
+    margin: 0px;
+    border: 0px;
+    color: initial;
+}
+/* color: inherit  opção padrão, informa que o objeto vai herdar as configs do pai
+   color: initial  ignora a herança  */
+
+p{  /* selecionar por tag define o padão para todas as tags */
+    color: hotpink;
+    background-color: rgb(50, 10, 116);
+}
+
+body div h1{ /* quanto mais especifico o endereço, mais "forte" e a propriedade */
+    background-color: blue;
+}
+
+h1, .teste1{ /* podemos selecionar mais de um endereço para definir as prop */
+    text-transform: lowercase;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.RedStyle{
+    font-size: 20px;
+    color: red;
+    background-color: wheat;
+}
+
+.pai{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: rgb(0, 255, 13);
+}
+.pai.filha{ /* nesse caso o elemento deve possuir as duas classes */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: tomato;
+    background-color: #344234;
+    margin-left: 35px;
+}
+
+/*  informa que só as "filhas" diretas da classe "pai" recebem a propriedade (chindren select ) 
+caso tenha algum objeto no caminho "falha o comando" */
+.pai>.filha{ 
+    color: blueviolet;
+    margin-left: 35px;
+}
+.pai>.filha>.neta{
+    margin-left: 60px;
+    color: rgb(209, 146, 109);
+}
+
+div .reset{ /* como não comecei outro arquivo, criei essa classe para zerar os atributos de cima*/
+    margin: 0px;
+    border: 0px;
+    color: initial;
+    background-color: initial;
+    font-family: initial;
+}
+
+.pai2 h2+p{ /* elemento da classe "pai" que tem os "irmãos" descritos na sequencia recebe a config (adjacents sibling  ) */
+    color: red;
+}
+.pai2 h2~p{ /* todos os "P" que vier depois do H2 na sequencia recebe a config */
+    background-color: turquoise;
+}
+
+[meu-atributo]{ /* para chamar um atributo usa [] */
+    color: rgb(210, 30, 39);
+    background-color: cornflowerblue;
+}
+[meu-atributo="valor"]{
+    font-size: 42px;
+    background-color: initial;
+    color: lightcoral;
+
+}
+[meu-atributo="valor2"]{
+    font-size: 25px;
+    background-color: initial;
+    color: rgb(42, 58, 151);
+
+}
